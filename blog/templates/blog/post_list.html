@@ -1,23 +1,75 @@
-<html>
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
     <head>
-        <title>Saran blog</title>
+      <title>Saran blog</title>
+      <meta charset="iso-8859-1">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'css/blogg.css' %}">
+
+
     </head>
-    <body>
-        <div>
-            <h1><a href="/">Saran Blog</a></h1>
-        </div>
 
-        <div>
-            <p>published: 01.29.2018, 12:03</p>
-            <h2><a href="">My first post</a></h2>
-            <p> Hi Folks , please have a look on my new blog. I have created using Python and Django. Please feel free you contact me at saransatyal@gmail.com if you wanna know how I learn this and I will be glad to guide you how I reach here. P.S: I am still learning and will continue to learn.</p>
-            <p> HAPPY LEARNING </p>
-        </div>
 
-        <div>
-          <p>published: 01.29.2018, 12:03</p>
-          <h2><a href="">My first post</a></h2>
-            <p>NAMASTE</p>
-        </div>
-    </body>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Learn Django with Saran</a></h1>
+      <h2>Free Django Tutorial</h2>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="Search Our Website" >
+        <input type="submit" id="sf_submit" value="submit">
+      </fieldset>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="#">Text Link</a></li>
+        <li><a href="#">Text Link</a></li>
+        <li><a href="#">Text Link</a></li>
+        <li><a href="#">Text Link</a></li>
+        <li class="last"><a href="#">Text Link</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="images/demo/630x300.gif" alt="">
+        <figcaption>
+          <h2>My notes</h2>
+          <p>Hi Folks , please have a look on my new blog. I have created using Python and Django. Please feel free you contact me at saransatyal@gmail.com if you wanna know how I learn this and I will be glad to guide you how I reach here. P.S: I am still learning and will continue to learn.</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- main content -->
+
+
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Learn Django with Saran</a></p>
+    <p class="fl_right">Template by <a href="" title="Free Website Templates">Saran Satyal</a></p>
+  </footer>
+</div>
+</body>
 </html>
